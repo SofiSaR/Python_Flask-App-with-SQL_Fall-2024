@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <table border = 1>
+            <tr>
+                <td>Entry Id</td>
+                <td>User Id</td>
+                <td>Name of Baking Item</td>
+                <td>Number of Excellent Votes</td>
+                <td>Number of Ok Votes</td>
+                <td>Number of Bad Votes</td>
+            </tr>
+            {% for row in result %}
+                <tr>
+                    {% for value in row %}
+                    <td> {{value}} </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+        <a href="{{url_for('home')}}">Go back to home page</a>
+    </body>
+</html>

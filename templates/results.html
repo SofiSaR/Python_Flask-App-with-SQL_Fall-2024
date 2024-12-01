@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>
+            Query result:
+            {% for error in message %}
+                <br>
+                {{error}}
+            {% endfor %}
+        </p>
+        <br>
+        <b><a href="{{url_for('home')}}">back to home</a></b>
+    </body>
+</html>
